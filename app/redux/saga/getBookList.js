@@ -5,7 +5,7 @@ import {
 
     GET_BOOK_LIST,
     GET_BOOK_LIST_SUCCEEDED,
-    GET_BOOK_LIST_FAILED
+    GET_BOOK_LIST_FAILED,
 } from '../actions/actionTypes'
 
 import { EndPoint } from '../../constants/apiEndPoints'
@@ -16,7 +16,7 @@ function* getBookList(params) {
     try {
         let getBookListParams = {
             method: "GET",
-            url: EndPoint.getBookList + '?type=drama',
+            url: `${EndPoint.getBookList}?page=${params.params.page}&type=${params.params.title}`
         };
         yield put({ type: SHOW_LOADER });
         const bookList = yield Api.apiCall(getBookListParams);
@@ -24,16 +24,16 @@ function* getBookList(params) {
         console.log('bookList==>', bookList)
 
         if (bookList.status !== "error") {
-            yield put({ type: GET_BOOK_LIST_SUCCEEDED, bookList: bookList.results })
+            yield put({ type: GET_BOOK_LIST_SUCCEEDED, payload: bookList })
         } else {
             alert('Error while fetching Books.')
             yield put({ type: GET_BOOK_LIST_FAILED, error: bookList.message })
-
         }
 
     }
     catch (error) {
-        alert('Something went wrong. Try again Later.')
+        yield put({ type: HIDE_LOADER });
+        alert('Something went wrong. Please check your connection')
         yield put({ type: GET_BOOK_LIST_FAILED, error: 'Something went wrong. Please check your connection' })
     }
 }

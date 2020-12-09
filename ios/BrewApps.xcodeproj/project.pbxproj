@@ -20,6 +20,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C1B86A8F5A33397681C4FAFF /* libPods-BrewApps-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1772FE3E7BAFA5F85E54F /* libPods-BrewApps-tvOSTests.a */; };
 		E75442C0645A9661E27569D8 /* libPods-BrewApps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B0F031013F59A6A224B12F /* libPods-BrewApps.a */; };
+		E9A96171258094E3007510C7 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9A96170258094E3007510C7 /* icomoon.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		BD41E0E33DAD1DB2B4061C8A /* Pods-BrewApps-BrewAppsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrewApps-BrewAppsTests.debug.xcconfig"; path = "Target Support Files/Pods-BrewApps-BrewAppsTests/Pods-BrewApps-BrewAppsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEF1772FE3E7BAFA5F85E54F /* libPods-BrewApps-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BrewApps-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8EDEDDFFFB7031B81CC1778 /* libPods-BrewApps-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BrewApps-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9A96170258094E3007510C7 /* icomoon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = icomoon.ttf; path = ../../../../Downloads/icomoon/fonts/icomoon.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F0B0F031013F59A6A224B12F /* libPods-BrewApps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BrewApps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 		13B07FAE1A68108700A75B9A /* BrewApps */ = {
 			isa = PBXGroup;
 			children = (
+				E9A9616525809464007510C7 /* Resources */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -180,6 +183,14 @@
 				2D02E4901E0B4A5D006451C7 /* BrewApps-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E9A9616525809464007510C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E9A96170258094E3007510C7 /* icomoon.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		E9CC8705AF7C9AE755AC9241 /* Pods */ = {
@@ -339,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A96171258094E3007510C7 /* icomoon.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);

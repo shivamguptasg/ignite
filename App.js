@@ -10,15 +10,17 @@ import Loader from './app/components/loader'
 
 import Home from './app/screens/home'
 import BookList from './app/screens/bookList'
+import BookReader from './app/screens/webView'
 
 const Stack = createStackNavigator();
 
 function Routes() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='BookList' headerMode='none'>
+      <Stack.Navigator initialRouteName='Home' headerMode='none'>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="BookList" component={BookList} />
+        <Stack.Screen name="BookReader" component={BookReader} />
       </Stack.Navigator>
     </NavigationContainer>
   )
